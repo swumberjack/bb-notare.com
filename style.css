@@ -58,8 +58,11 @@ a button:active {
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
-/* Optional: Logo */
 .logo {
-    max-width: 150px;
+    max-width: 300px; /* größer */
+    width: 100%;      /* Bild skaliert proportional, maximal 300px */
+    height: auto;     /* Höhe passt sich proportional an */
     margin-bottom: 30px;
 }
+
+
