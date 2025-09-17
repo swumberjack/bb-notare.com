@@ -17,24 +17,27 @@ main {
 }
 
 button {
-    padding: 12px 24px;           /* Größe */
-    font-size: 16px;              /* Textgröße */
+    padding: 12px 28px;           /* Größe */
+    font-size: 16px;              
     font-weight: bold;
-    color: white;                 /* Textfarbe */
-    background-color: #007bff;    /* Blaue Grundfarbe */
-    border: none;                 /* Kein Rahmen */
-    border-radius: 8px;           /* Runde Ecken */
-    cursor: pointer;              /* Mauszeiger als Hand */
-    transition: background-color 0.3s, transform 0.2s; /* Animation */
+    color: white;                 
+    background-color: #0055a4;    /* dunkleres Blau passend zur BB Notare Website */
+    border: none;                 
+    border-radius: 8px;           
+    cursor: pointer;              
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* leichter Schatten */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; 
 }
 
 button:hover {
-    background-color: #0056b3;    /* Dunkleres Blau beim Hover */
-    transform: scale(1.05);       /* Kleines „zoomen“ beim Hover */
+    background-color: #0070d1;    /* helleres Blau beim Hover */
+    transform: scale(1.05);       
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Schatten verstärkt sich */
 }
 
 button:active {
-    transform: scale(0.98);       /* Effekt beim Klicken */
+    transform: scale(0.98);       
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* kleinerer Schatten beim Klicken */
 }
 
 
@@ -46,4 +49,5 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 
