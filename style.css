@@ -17,18 +17,26 @@ main {
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #0080ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px 24px;           /* Größe */
+    font-size: 16px;              /* Textgröße */
+    font-weight: bold;
+    color: white;                 /* Textfarbe */
+    background-color: #007bff;    /* Blaue Grundfarbe */
+    border: none;                 /* Kein Rahmen */
+    border-radius: 8px;           /* Runde Ecken */
+    cursor: pointer;              /* Mauszeiger als Hand */
+    transition: background-color 0.3s, transform 0.2s; /* Animation */
 }
 
 button:hover {
-    background-color: #0059b3;
+    background-color: #0056b3;    /* Dunkleres Blau beim Hover */
+    transform: scale(1.05);       /* Kleines „zoomen“ beim Hover */
 }
+
+button:active {
+    transform: scale(0.98);       /* Effekt beim Klicken */
+}
+
 
 footer {
     background-color: #004080;
@@ -38,3 +46,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
