@@ -1,53 +1,65 @@
+/* --- Body & Layout --- */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
 }
 
-header {
-    background-color: #004080;
-    color: white;
-    padding: 20px 0;
+.container {
+    max-width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-main {
-    padding: 50px 20px;
+/* --- Überschrift & Text --- */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0055a4;
 }
 
-button {
-    padding: 12px 28px;           /* Größe */
-    font-size: 16px;              
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* --- Button --- */
+a button {
+    padding: 12px 28px;
+    font-size: 16px;
     font-weight: bold;
-    color: white;                 
-    background-color: #0055a4;    /* dunkleres Blau passend zur BB Notare Website */
-    border: none;                 
-    border-radius: 8px;           
-    cursor: pointer;              
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* leichter Schatten */
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; 
-}
-
-button:hover {
-    background-color: #0070d1;    /* helleres Blau beim Hover */
-    transform: scale(1.05);       
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Schatten verstärkt sich */
-}
-
-button:active {
-    transform: scale(0.98);       
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* kleinerer Schatten beim Klicken */
-}
-
-
-footer {
-    background-color: #004080;
     color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #0055a4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
+a button:hover {
+    background-color: #0070d1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
 
+a button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+/* Optional: Logo */
+.logo {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
