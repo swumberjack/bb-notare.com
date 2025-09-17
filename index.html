@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>THIS SITE DOES NOT EXIST !</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Weiterleitung zu BB Notare</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>This site does not exist !</h1>
-        <img src="bilder/logo.png" alt="Logo" width="150">
-    </header>
+    <div class="container">
+        <!-- Optional Logo -->
+        <img src="logo.png" alt="BB Notare Logo" class="logo">
 
-     <main>
-        <p>Were you looking for www.bb-notare.ch ?</p>
+        <h1>Sie werden weitergeleitet</h1>
+        <p>Sie verlassen unsere Seite und werden zu BB Notare weitergeleitet. Klicken Sie unten, um fortzufahren.</p>
+
         <a href="https://www.bb-notare.ch/" target="_blank">
             <button>Zur Website</button>
         </a>
-    </main>
+    </div>
 
-    <footer>
-        <p>© 2025 FOOTER</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <!-- Automatische Weiterleitung nach 5 Sekunden -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.bb-notare.ch/";
+        }, 5000);
+    </script>
 </body>
 </html>
-
-
